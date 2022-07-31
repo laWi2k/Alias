@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		65AF6CB02896AED200DE08C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CAF2896AED200DE08C6 /* AppDelegate.swift */; };
 		65AF6CB22896AED200DE08C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CB12896AED200DE08C6 /* SceneDelegate.swift */; };
-		65AF6CB42896AED200DE08C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CB32896AED200DE08C6 /* ViewController.swift */; };
-		65AF6CB72896AED200DE08C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AF6CB52896AED200DE08C6 /* Main.storyboard */; };
 		65AF6CB92896AED400DE08C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AF6CB82896AED400DE08C6 /* Assets.xcassets */; };
 		65AF6CBC2896AED400DE08C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AF6CBA2896AED400DE08C6 /* LaunchScreen.storyboard */; };
-		65AF6CC72896AED400DE08C6 /* AliasCopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CC62896AED400DE08C6 /* AliasCopyTests.swift */; };
-		65AF6CD12896AED400DE08C6 /* AliasCopyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CD02896AED400DE08C6 /* AliasCopyUITests.swift */; };
-		65AF6CD32896AED400DE08C6 /* AliasCopyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CD22896AED400DE08C6 /* AliasCopyUITestsLaunchTests.swift */; };
+		65AF6CE72896AF3100DE08C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CE62896AF3100DE08C6 /* MainViewController.swift */; };
+		65AF6CE92896AF3A00DE08C6 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CE82896AF3A00DE08C6 /* RulesViewController.swift */; };
+		65AF6CEB2896AF4400DE08C6 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CEA2896AF4400DE08C6 /* TopicViewController.swift */; };
+		65AF6CED2896AF4D00DE08C6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CEC2896AF4D00DE08C6 /* GameViewController.swift */; };
+		65AF6CF02896AF6000DE08C6 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CEF2896AF6000DE08C6 /* TopicView.swift */; };
+		65AF6CF22896AF7800DE08C6 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CF12896AF7800DE08C6 /* UIButtonExtension.swift */; };
+		65AF6CF42896AF8600DE08C6 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CF32896AF8600DE08C6 /* UILabelExtension.swift */; };
+		65AF6CF62896AF9200DE08C6 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CF52896AF9200DE08C6 /* ExtensionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +42,19 @@
 		65AF6CAC2896AED200DE08C6 /* AliasCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliasCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AF6CAF2896AED200DE08C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AF6CB12896AED200DE08C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65AF6CB32896AED200DE08C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65AF6CB62896AED200DE08C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65AF6CB82896AED400DE08C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65AF6CBB2896AED400DE08C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65AF6CBD2896AED400DE08C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65AF6CC22896AED400DE08C6 /* AliasCopyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliasCopyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65AF6CC62896AED400DE08C6 /* AliasCopyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasCopyTests.swift; sourceTree = "<group>"; };
 		65AF6CCC2896AED400DE08C6 /* AliasCopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliasCopyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65AF6CD02896AED400DE08C6 /* AliasCopyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasCopyUITests.swift; sourceTree = "<group>"; };
-		65AF6CD22896AED400DE08C6 /* AliasCopyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasCopyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65AF6CE62896AF3100DE08C6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65AF6CE82896AF3A00DE08C6 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		65AF6CEA2896AF4400DE08C6 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		65AF6CEC2896AF4D00DE08C6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		65AF6CEF2896AF6000DE08C6 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
+		65AF6CF12896AF7800DE08C6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		65AF6CF32896AF8600DE08C6 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		65AF6CF52896AF9200DE08C6 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				65AF6CAE2896AED200DE08C6 /* AliasCopy */,
-				65AF6CC52896AED400DE08C6 /* AliasCopyTests */,
-				65AF6CCF2896AED400DE08C6 /* AliasCopyUITests */,
 				65AF6CAD2896AED200DE08C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,10 +103,11 @@
 		65AF6CAE2896AED200DE08C6 /* AliasCopy */ = {
 			isa = PBXGroup;
 			children = (
-				65AF6CAF2896AED200DE08C6 /* AppDelegate.swift */,
-				65AF6CB12896AED200DE08C6 /* SceneDelegate.swift */,
-				65AF6CB32896AED200DE08C6 /* ViewController.swift */,
-				65AF6CB52896AED200DE08C6 /* Main.storyboard */,
+				65AF6CE32896AEFE00DE08C6 /* Controllers */,
+				65AF6CE22896AEF800DE08C6 /* Application */,
+				65AF6CE12896AEF200DE08C6 /* Extensions */,
+				65AF6CE02896AEEE00DE08C6 /* Views */,
+				65AF6CDF2896AEE800DE08C6 /* Models */,
 				65AF6CB82896AED400DE08C6 /* Assets.xcassets */,
 				65AF6CBA2896AED400DE08C6 /* LaunchScreen.storyboard */,
 				65AF6CBD2896AED400DE08C6 /* Info.plist */,
@@ -110,21 +115,49 @@
 			path = AliasCopy;
 			sourceTree = "<group>";
 		};
-		65AF6CC52896AED400DE08C6 /* AliasCopyTests */ = {
+		65AF6CDF2896AEE800DE08C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				65AF6CC62896AED400DE08C6 /* AliasCopyTests.swift */,
 			);
-			path = AliasCopyTests;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		65AF6CCF2896AED400DE08C6 /* AliasCopyUITests */ = {
+		65AF6CE02896AEEE00DE08C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				65AF6CD02896AED400DE08C6 /* AliasCopyUITests.swift */,
-				65AF6CD22896AED400DE08C6 /* AliasCopyUITestsLaunchTests.swift */,
+				65AF6CEF2896AF6000DE08C6 /* TopicView.swift */,
 			);
-			path = AliasCopyUITests;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65AF6CE12896AEF200DE08C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65AF6CF12896AF7800DE08C6 /* UIButtonExtension.swift */,
+				65AF6CF32896AF8600DE08C6 /* UILabelExtension.swift */,
+				65AF6CF52896AF9200DE08C6 /* ExtensionViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		65AF6CE22896AEF800DE08C6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				65AF6CAF2896AED200DE08C6 /* AppDelegate.swift */,
+				65AF6CB12896AED200DE08C6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		65AF6CE32896AEFE00DE08C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65AF6CE62896AF3100DE08C6 /* MainViewController.swift */,
+				65AF6CE82896AF3A00DE08C6 /* RulesViewController.swift */,
+				65AF6CEA2896AF4400DE08C6 /* TopicViewController.swift */,
+				65AF6CEC2896AF4D00DE08C6 /* GameViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +266,6 @@
 			files = (
 				65AF6CBC2896AED400DE08C6 /* LaunchScreen.storyboard in Resources */,
 				65AF6CB92896AED400DE08C6 /* Assets.xcassets in Resources */,
-				65AF6CB72896AED200DE08C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65AF6CB42896AED200DE08C6 /* ViewController.swift in Sources */,
+				65AF6CED2896AF4D00DE08C6 /* GameViewController.swift in Sources */,
+				65AF6CE92896AF3A00DE08C6 /* RulesViewController.swift in Sources */,
+				65AF6CF42896AF8600DE08C6 /* UILabelExtension.swift in Sources */,
+				65AF6CF62896AF9200DE08C6 /* ExtensionViewController.swift in Sources */,
+				65AF6CEB2896AF4400DE08C6 /* TopicViewController.swift in Sources */,
+				65AF6CF02896AF6000DE08C6 /* TopicView.swift in Sources */,
+				65AF6CF22896AF7800DE08C6 /* UIButtonExtension.swift in Sources */,
 				65AF6CB02896AED200DE08C6 /* AppDelegate.swift in Sources */,
+				65AF6CE72896AF3100DE08C6 /* MainViewController.swift in Sources */,
 				65AF6CB22896AED200DE08C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65AF6CC72896AED400DE08C6 /* AliasCopyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +314,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65AF6CD32896AED400DE08C6 /* AliasCopyUITestsLaunchTests.swift in Sources */,
-				65AF6CD12896AED400DE08C6 /* AliasCopyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		65AF6CB52896AED200DE08C6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65AF6CB62896AED200DE08C6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65AF6CBA2896AED400DE08C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +470,6 @@
 				INFOPLIST_FILE = AliasCopy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +497,6 @@
 				INFOPLIST_FILE = AliasCopy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

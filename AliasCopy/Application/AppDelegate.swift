@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AliasCopy
+//  Alias
 //
-//  Created by Daniel on 31.07.2022.
+//  Created by Dyadichev on 27.07.2022.
 //
 
 import UIKit
