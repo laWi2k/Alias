@@ -12,7 +12,7 @@ class GameViewController: UIViewController{
     
     //MARK: - let/var
     var aliasTimer = Timer()
-    var time = 60
+    var time = 70
     
 //    let aliasManager = AliasManager()
     //MARK: - Properties
