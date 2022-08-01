@@ -7,15 +7,18 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     //MARK: - let/var
-    var index : Int = 0
+    
+    var audioPlayer = AVAudioPlayer()
     var aliasTimer = Timer()
     var aliasRandomIventTimer = Timer()
     var time : Int = 60
     var greenCount : Int = 0
     var redCount : Int = 0
+    var index : Int = 0
     //MARK: - Properties
     ///Главный стек-вью содержащий в себе Label и Button Stack.
     private let stackButtonsView: UIStackView = {
@@ -110,6 +113,7 @@ class GameViewController: UIViewController {
         }  else if time == 0 {
             stopTimer()
             timerLabel.text = "Конец"
+            playVictorySound()
         }
     }
     ///Форматирование Int в String
@@ -157,14 +161,17 @@ class GameViewController: UIViewController {
         greenCount += 1
         greenLabel.text = greenCount.description
         guessWordLabel.text = aliasWords?.randomElement()
-}
+        playTrueSound()
+    }
     @objc func skipButtonTapped(_ sender : UIButton) {
         sender.tag = 2
         index = sender.tag
         redCount += 1
         redLabel.text = redCount.description
         guessWordLabel.text = aliasWords?.randomElement()
+        playFalseSound()
 }
+    
 }
     //MARK: - SetConstraints
 extension GameViewController {
