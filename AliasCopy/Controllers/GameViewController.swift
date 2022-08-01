@@ -4,7 +4,6 @@
 //
 //  Created by Dyadichev on 27.07.2022.
 //
-
 import Foundation
 import UIKit
 import AVFoundation
@@ -82,7 +81,7 @@ class GameViewController: UIViewController {
 }
     ///Запуск рандомного события.
     private func startRandomTimer() {
-    aliasRandomIventTimer = Timer.scheduledTimer(timeInterval: randomNumber(in: 15...58), target: self, selector: #selector (randomIventTimer), userInfo: nil, repeats: false)
+    aliasRandomIventTimer = Timer.scheduledTimer(timeInterval: Double.random(in: 34...52), target: self, selector: #selector (randomIventTimer), userInfo: nil, repeats: false)
     }
     ///Остановить основной таймер
     private func stopTimer() {
@@ -98,9 +97,9 @@ class GameViewController: UIViewController {
         }
         //Выбор ответа и начисление рандомного количества баллов.
         if index == 1 {
-            greenCount += Int(randomNumber(in: 3...7))
+            greenCount += Int.random(in: 3...7)
         } else if index == 2 {
-            redCount += Int(randomNumber(in: 3...7))
+            redCount += Int.random(in: 3...7)
         }
         guessWordLabel.font = .systemFont(ofSize: CGFloat (48))
             startTimer()
@@ -110,10 +109,28 @@ class GameViewController: UIViewController {
         if time > 0 {
             time -= 1
             timerLabel.text = formatTime()
+    ///При завершении времени игра заканчивается с последующей анимацией.
         }  else if time == 0 {
             stopTimer()
-            timerLabel.text = "Конец"
+            
+            UIView.animate(withDuration: 0.3) { [self] in
+            timerLabel.text = "Игра закончена 🎉"
+            timerLabel.font = UIFont.systemFont(ofSize: 35)
+            guessWordLabel.font = UIFont.systemFont(ofSize: 35)
+            guessWordLabel.adjustsFontSizeToFitWidth = false
+            timerLabel.adjustsFontSizeToFitWidth = false
+
+            ///Проверка очков и выведение утешительного лейбла.
+                if redCount > greenCount {
+            guessWordLabel.text = "Вы проиграли! 🐸"
+                } else {
+                guessWordLabel.text = "Отличный результат! 👑"
+                }
+            ///Звук завершения игры, скрытие других кнопок.
             playVictorySound()
+            skipButton.alpha = 0
+            correctButton.alpha = 0
+            }
         }
     }
     ///Форматирование Int в String
@@ -184,8 +201,9 @@ extension GameViewController {
     [correctButton, skipButton, showAlertButton].forEach
     { stackButtonsView.addArrangedSubview($0) }
                                                          
-    let indent: CGFloat = 125
-    
+    let indent: CGFloat = 10
+    let upper: CGFloat = 125
+    let height : CGFloat = 60
     NSLayoutConstraint.activate([
         logoAliasImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 30),
         logoAliasImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -195,35 +213,35 @@ extension GameViewController {
     
     NSLayoutConstraint.activate([
         greenLabel.topAnchor.constraint(equalTo: logoAliasImage.topAnchor, constant: 5),
-        greenLabel.leadingAnchor.constraint(equalTo: logoAliasImage.trailingAnchor, constant: 10),
+        greenLabel.leadingAnchor.constraint(equalTo: logoAliasImage.trailingAnchor, constant: indent),
         redLabel.topAnchor.constraint(equalTo: logoAliasImage.topAnchor, constant: 5),
-        redLabel.trailingAnchor.constraint(equalTo: logoAliasImage.leadingAnchor, constant: -10),
+        redLabel.trailingAnchor.constraint(equalTo: logoAliasImage.leadingAnchor, constant: -indent),
         ])
     
         NSLayoutConstraint.activate([
-        timerLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: indent),
+        timerLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: upper),
         timerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: indent),
         timerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -indent),
-        timerLabel.heightAnchor.constraint(equalToConstant: 60)
+        timerLabel.heightAnchor.constraint(equalToConstant: height)
         ])
     
     NSLayoutConstraint.activate([
-        guessWordLabel.topAnchor.constraint(equalTo: timerLabel.bottomAnchor, constant: indent),
+        guessWordLabel.topAnchor.constraint(equalTo: timerLabel.bottomAnchor, constant: upper),
         guessWordLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: indent),
         guessWordLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -indent),
-        guessWordLabel.heightAnchor.constraint(equalToConstant: 60)
+        guessWordLabel.heightAnchor.constraint(equalToConstant: height)
         ])
     
     NSLayoutConstraint.activate([
-        stackButtonsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-        stackButtonsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+        stackButtonsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: indent),
+        stackButtonsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -indent),
         stackButtonsView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
     ])
     
     NSLayoutConstraint.activate([
-        correctButton.heightAnchor.constraint(equalToConstant: 60),
-        skipButton.heightAnchor.constraint(equalToConstant: 60),
-        showAlertButton.heightAnchor.constraint(equalToConstant: 60),
+        correctButton.heightAnchor.constraint(equalToConstant: height),
+        skipButton.heightAnchor.constraint(equalToConstant: height),
+        showAlertButton.heightAnchor.constraint(equalToConstant: height),
     ])
 }
     }
