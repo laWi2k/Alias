@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C37BA628981726001E520E /* aliasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C37BA528981726001E520E /* aliasManager.swift */; };
+		43C37BA828981731001E520E /* simpleJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C37BA728981731001E520E /* simpleJson.json */; };
 		65AF6CB02896AED200DE08C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CAF2896AED200DE08C6 /* AppDelegate.swift */; };
 		65AF6CB22896AED200DE08C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CB12896AED200DE08C6 /* SceneDelegate.swift */; };
 		65AF6CB92896AED400DE08C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AF6CB82896AED400DE08C6 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		65AF6CF02896AF6000DE08C6 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CEF2896AF6000DE08C6 /* TopicView.swift */; };
 		65AF6CF22896AF7800DE08C6 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CF12896AF7800DE08C6 /* UIButtonExtension.swift */; };
 		65AF6CF42896AF8600DE08C6 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CF32896AF8600DE08C6 /* UILabelExtension.swift */; };
-		65AF6CF62896AF9200DE08C6 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF6CF52896AF9200DE08C6 /* ExtensionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43C37BA528981726001E520E /* aliasManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aliasManager.swift; sourceTree = "<group>"; };
+		43C37BA728981731001E520E /* simpleJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simpleJson.json; sourceTree = "<group>"; };
 		65AF6CAC2896AED200DE08C6 /* AliasCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliasCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AF6CAF2896AED200DE08C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AF6CB12896AED200DE08C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		65AF6CEF2896AF6000DE08C6 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		65AF6CF12896AF7800DE08C6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		65AF6CF32896AF8600DE08C6 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
-		65AF6CF52896AF9200DE08C6 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,8 @@
 		65AF6CDF2896AEE800DE08C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				43C37BA528981726001E520E /* aliasManager.swift */,
+				43C37BA728981731001E520E /* simpleJson.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,7 +139,6 @@
 			children = (
 				65AF6CF12896AF7800DE08C6 /* UIButtonExtension.swift */,
 				65AF6CF32896AF8600DE08C6 /* UILabelExtension.swift */,
-				65AF6CF52896AF9200DE08C6 /* ExtensionViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C37BA828981731001E520E /* simpleJson.json in Resources */,
 				65AF6CBC2896AED400DE08C6 /* LaunchScreen.storyboard in Resources */,
 				65AF6CB92896AED400DE08C6 /* Assets.xcassets in Resources */,
 			);
@@ -292,8 +296,8 @@
 			files = (
 				65AF6CED2896AF4D00DE08C6 /* GameViewController.swift in Sources */,
 				65AF6CE92896AF3A00DE08C6 /* RulesViewController.swift in Sources */,
+				43C37BA628981726001E520E /* aliasManager.swift in Sources */,
 				65AF6CF42896AF8600DE08C6 /* UILabelExtension.swift in Sources */,
-				65AF6CF62896AF9200DE08C6 /* ExtensionViewController.swift in Sources */,
 				65AF6CEB2896AF4400DE08C6 /* TopicViewController.swift in Sources */,
 				65AF6CF02896AF6000DE08C6 /* TopicView.swift in Sources */,
 				65AF6CF22896AF7800DE08C6 /* UIButtonExtension.swift in Sources */,

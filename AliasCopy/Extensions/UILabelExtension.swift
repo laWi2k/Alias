@@ -7,13 +7,18 @@
 
 import Foundation
 import UIKit
-
-extension UILabel{
-    class func createLabel(text: String, size: CGFloat) -> UILabel {
+extension UILabel {
+class func createLabel(text: String, font: CGFloat, color: UIColor) -> UILabel {
+        
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = color
+        label.font = .systemFont(ofSize: font)
         label.text = text
-        label.font = .boldSystemFont(ofSize: size)
-        label.textColor = .black
+        //Автомат ресайз по ширине от сайза экрана.
+        label.adjustsFontSizeToFitWidth = true
+        label.textAlignment = .center
         return label
     }
 }
+

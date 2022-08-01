@@ -11,7 +11,7 @@ import UIKit
 class StackView: UIStackView{
     
     
-    var titleLabel = UILabel.createLabel(text: "Категории", size: 34)
+    var titleLabel = UILabel.createLabel(text: "Категории", font: 34, color: .black)
     var categoryOne = UIButton.createButton(title: "Категория 1", height: 120, color: .systemBlue, image: .init(systemName: "checkmark.circle"))
     var categoryTwo = UIButton.createButton(title: "Категория 2", height: 120, color: .systemBlue, image: .init(systemName: "checkmark.circle"))
     var categoryThree = UIButton.createButton(title: "Категория 3", height: 120, color: .systemBlue, image: .init(systemName: "checkmark.circle"))
