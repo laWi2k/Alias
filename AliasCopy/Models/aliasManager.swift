@@ -6,11 +6,14 @@
 //
 
 import Foundation
- struct AliasManager : Codable {
+
+struct AliasManager : Codable {
      let words : [String]
      init() { words = [] }
  }
+
 let aliasWords =  parseJSON(resourseName: "simpleJson")
+
 let emodjyArray = [
 "🤠", "🗿", "⛺️", "🐔", "😜", "😱", "🚀",
 "🐳", "🍄", "🦠", "🐸", "👑", "😏", "🥳"
