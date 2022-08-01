@@ -82,7 +82,7 @@ class GameViewController: UIViewController {
 }
     ///Запуск рандомного события.
     private func startRandomTimer() {
-    aliasRandomIventTimer = Timer.scheduledTimer(timeInterval: randomNumber(in: 15...58), target: self, selector: #selector (randomIventTimer), userInfo: nil, repeats: false)
+    aliasRandomIventTimer = Timer.scheduledTimer(timeInterval: Double.random(in: 34...52), target: self, selector: #selector (randomIventTimer), userInfo: nil, repeats: false)
     }
     ///Остановить основной таймер
     private func stopTimer() {
@@ -98,9 +98,9 @@ class GameViewController: UIViewController {
         }
         //Выбор ответа и начисление рандомного количества баллов.
         if index == 1 {
-            greenCount += Int(randomNumber(in: 3...7))
+            greenCount += Int.random(in: 3...7)
         } else if index == 2 {
-            redCount += Int(randomNumber(in: 3...7))
+            redCount += Int.random(in: 3...7)
         }
         guessWordLabel.font = .systemFont(ofSize: CGFloat (48))
             startTimer()
